@@ -1,7 +1,7 @@
 {
     "name": "front-quiqueinma",
     "version": "0.0.0",
-    "homepage": "https://ticquique.github.io/em__frontend",
+    "homepage": "https://estudiomundo.github.io/em__frontend",
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",
