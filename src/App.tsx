@@ -1,12 +1,12 @@
 import './App.css';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import { Component } from 'react';
 
 ReactGA.initialize('G-L8D4TF820R');
 
 class App extends Component {
   componentDidMount() {
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.send({ hitType: 'pageview', page: window.location.pathname });
   }
 
   render() {
