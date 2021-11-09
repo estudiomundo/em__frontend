@@ -7,7 +7,7 @@ interface NavbarLink {
 }
 
 const NavbarItem: (props: NavbarLink) => JSX.Element = ({ text, href }) => (
-  <Link to={href} className="font-normal sm:text-lg text-sm text-gray-800 p-2">
+  <Link to={href} className="sm:text-lg text-md text-gray-800 sm:px-2 px-2">
     {text}
   </Link>
 );
@@ -20,9 +20,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex justify-between">
-      <h1 className="font-bold text-green-900 text-lg p-2">Estudio Mundo</h1>
-      <ul className="flex justify-between">
+    <nav className="flex justify-between shadow-sm py-2">
+      <Link to="/">
+        <h1 className="font-bold whitespace-nowrap text-green-900 text-2xl sm:px-2 px-1 mx-5">
+          Estudio Mundo
+        </h1>
+      </Link>
+      <ul className="flex justify-between whitespace-nowrap">
         {links.map((v) => (
           <NavbarItem key={v.text} {...v} />
         ))}
