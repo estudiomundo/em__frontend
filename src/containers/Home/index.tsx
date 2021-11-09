@@ -15,13 +15,13 @@ const Home = () => {
   ];
 
   return (
-    <div className="grid grid-rows-3 gap-4">
-      <h2 className="text-center font-bold text-3xl text-gray-800">
+    <div className="grid grid-rows-3 gap-4 items-center">
+      <h2 className="prose prose-2xl max-w-7xl font-bold text-3xl text-gray-800 m-auto text-center">
         Estudio Mundo está formado por Quique Pons, desarrollador de software e
         Inma Soler, diseñadora gráfica especializada en UX/UI. ¡Encantados de
         conocerte!
       </h2>
-      <p className="text-center font-normal text-gray-800 text-lg">
+      <p className="prose prose-2xl text-center text-gray-800 m-auto">
         ¿Qué camino es el mejor para ti?
       </p>
       <div className="container-button justify-center flex gap-4">
